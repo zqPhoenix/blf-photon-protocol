@@ -8,7 +8,7 @@ function SendAnnouncement(text, duration) {
     .addParam(ParameterCode.Code, PhotonPacketBuilder.types.byte(200))
     .addParam(ParameterCode.Cache, PhotonPacketBuilder.types.byte(4))
     .addParam(ParameterCode.Data, PhotonPacketBuilder.types.hashTable([
-        [PhotonPacketBuilder.types.byte(0), PhotonPacketBuilder.types.integer(window.localPlayer.viewId)],
+        [PhotonPacketBuilder.types.byte(0), PhotonPacketBuilder.types.integer(1001)], // ViewId
         [PhotonPacketBuilder.types.byte(4), PhotonPacketBuilder.types.objectArray([
             PhotonPacketBuilder.types.string(text),
             PhotonPacketBuilder.types.float(duration)
