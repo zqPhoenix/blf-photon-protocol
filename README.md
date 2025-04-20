@@ -238,7 +238,7 @@ PhotonPacketBuilder.types.byteArray([1,2,3]);  // { type: 0x78, data: [1, 2, 3] 
 
 - All values are serialized in GPBinaryV16 format.
 - Order of parameters may matter depending on implementation.
-- `PhotonSerializerX` is assumed to be the custom serializer handling GPBinary serialization.
+- `PhotonSerializer` is the custom serializer handling GPBinary serialization.
 
 ---
 
