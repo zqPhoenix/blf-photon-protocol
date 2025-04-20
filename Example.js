@@ -10,8 +10,8 @@ function SendAnnouncement(text, duration) {
     .addParam(ParameterCode.Data, PhotonPacketBuilder.types.hashTable([
         [PhotonPacketBuilder.types.byte(0), PhotonPacketBuilder.types.integer(1001)], // ViewId
         [PhotonPacketBuilder.types.byte(4), PhotonPacketBuilder.types.objectArray([
-            PhotonPacketBuilder.types.string(text),
-            PhotonPacketBuilder.types.float(duration)
+            PhotonPacketBuilder.types.string(text), // Announcement Text
+            PhotonPacketBuilder.types.float(duration) // Announcement Duration
         ])],
         [PhotonPacketBuilder.types.byte(5), PhotonPacketBuilder.types.byte(61)],
     ]));
